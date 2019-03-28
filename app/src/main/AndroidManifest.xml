@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".MyService" android:process=":remote"></service>
+        <service android:name=".MyService" >
+            <intent-filter>
+                <action android:name="com.example.servicetest02.MyService"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
